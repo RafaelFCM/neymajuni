@@ -19,10 +19,8 @@ class _FormScreenState extends State<FormScreen> {
     if (_formKey.currentState!.validate()) {
       _formKey.currentState!.save();
 
-      // Simular salvamento
       await Future.delayed(Duration(seconds: 1));
 
-      // Mostrar pop-up de sucesso
       showDialog(
         context: context,
         builder: (ctx) => AlertDialog(
